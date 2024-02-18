@@ -4,33 +4,70 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
+}
+
+:root {
+
+  --bgcl: #060912;
+  --textcl: #F9F3FF;
+
+  --maincl: #36FFFF;
+  --secondarycl: #9057f9;
+  --emeraldcl: #27cf99;
+  --rosecl: #c93f63;
+  --orangecl: #f99369;
+
 }
 
 
 body {
   font-family: "Chakra Petch", sans-serif;
-  background-color: #060912;
-  color: #f9f3ff;
+  background-color: var(--bgcl);
+  color: var(--textcl);
   font-size: 1.29rem;
   letter-spacing: 0.0625rem;
   word-spacing: 0.21rem;
-  background-color: #060912;
+}
+
+
+.Scroll-Progress-Bar{
+  height: 0.21vh;
+  position: fixed;
+  top: 0;
+  z-index: 1008;
+  background-color: var(--maincl);
+  width: 0%;
+  animation: SCROLL-PROGRESS linear;
+  animation-timeline: scroll();
+}
+
+@keyframes SCROLL-PROGRESS {
+  100%{
+    width: 100%;
+  }
 }
 
 nav {
-  font-family: "Sofia Sans", sans-serif;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.44rem 3.6rem;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: var(--bgcl);
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(90deg, #536996 , #393E39) 9;
 }
+
 
 nav a {
   text-decoration-line: none;
-  margin-left: 5.4rem;
-  color: #f9f3ff;
+  margin-left: 5.1rem;
+  color: var(--textcl);
   position: relative;
 }
 
@@ -41,8 +78,8 @@ nav a:hover::before {
 nav a::before {
   content: "";
   position: absolute;
-  background-color: #36ffff;
-  box-shadow: 0px -3px 9px #36ffff;
+  background-color: var(--maincl);
+  box-shadow: 0px -3px 9px var(--maincl);
   width: 0%;
   height: 2px;
   bottom: -36%;
@@ -59,10 +96,14 @@ nav>div>p {
   font-weight: 609;
   background-clip: text;
   color: transparent;
-  background-image: linear-gradient(108deg, #00c09c 9%, #c93f63 69%);
+  background-image: linear-gradient(108deg, var(--emeraldcl) 9%, var(--rosecl) 69%);
 }
 
 
+.section-gap {          /*UTILITY CLASS*/                     
+  margin-block: 6.9rem;
+  padding-inline: 3.6rem;
+}
 
 
 .home {
@@ -70,21 +111,13 @@ nav>div>p {
   align-items: center;
 }
 
-.home,.skills {
-  padding-inline: 3.6rem;
-}
-
-.home,.skills {
-  margin-block: 6.9rem;
-}
 
 .profilepic {
-  width: 33%;
-  height: 54vh;
+  width: 30.9%;
   border-radius: 50%;
   margin-inline: auto;
   border: 9px solid transparent;
-  box-shadow: 0px 0px 9px 1px #27cf99;
+  box-shadow: 0px 0px 27px 12px var(--emeraldcl);
   animation: PICUPDOWN 1290ms linear infinite;
 }
 
@@ -96,8 +129,8 @@ nav>div>p {
 
 
 .profilepic>img {
+  display: block;
   width: 100%;
-  height: 100%;
   border-radius: inherit;
 }
 
@@ -109,12 +142,11 @@ nav>div>p {
   background-clip: text;
   color: transparent;
   font-weight: 609;
-  background-image: linear-gradient(108deg, #9057f9 9%, #69ccf3 69%, #f99369 81%);
+  background-image: linear-gradient(108deg, var(--secondarycl) 9%, var(--maincl) 69%, var(--orangecl) 81%);
 }
 
 .selfinfo>:nth-child(3)>span {
-  background-image: linear-gradient(108deg, #c93f63 9%, #36ffff 69%, #27cf99 81%);
-  color: #060912;
+  color: var(--bgcl);
   -webkit-text-stroke: 3px transparent;
   animation: TEXT 1290ms linear infinite;
 }
@@ -141,20 +173,20 @@ nav>div>p {
   width: 39%;
   display: block;
   font-weight: 810;
-  color: #f9f3ff;
+  color: var(--textcl);
   text-decoration-line: none;
-  background-color: #36ffff;
-  color: #060912;
+  background-color: var(--maincl);
+  color: var(--bgcl);
   margin-block: 3rem;
   text-align: center;
   border-radius: 2.1rem;
   padding: 0.54rem;
-  box-shadow: 0px 0px 12px 3px #36ffff;
+  box-shadow: 0px 0px 18px 3px var(--maincl);
   transition: box-shadow 210ms linear 21ms, transform 69ms linear;
 }
 
 .selfinfo a:hover {
-  box-shadow: 0px 0px 21px #36ffff,0px 0px 36px #36ffff,0px 0px 45px #36ffff;
+  box-shadow: 0px 0px 9px var(--maincl), 0px 0px 36px var(--maincl), 0px 0px 45px var(--maincl);
 }
 
 .selfinfo a:active {
@@ -164,62 +196,143 @@ nav>div>p {
 
 
 
-.skillsheading{
+.skillsheading,
+.aboutmeheading {
   width: fit-content;
   background-clip: text;
   color: transparent;
-  background-image: linear-gradient(90deg, #00c09c 9%, #c93f63 69% );
+  background-image: linear-gradient(90deg, var(--emeraldcl) 9%, var(--rosecl) 69%);
 }
 
 
 
-.skillsinfo{
+.skillsinfo {
   margin-top: 2.7rem;
   display: flex;
   text-align: center;
   justify-content: space-between;
   padding: 0.54rem;
   position: relative;
-  background-color: #060912;
-  border-radius: 1.29rem;
+  background-color: var(--bgcl);
+  border-radius: 3.9rem;
 }
 
 
-.skillsinfo::before{
+.skillsinfo::before {
   content: "";
   position: absolute;
   height: 102%;
   width: 100.2%;
   left: -0.09%;
   top: -1.2%;
-  background-image: linear-gradient(90deg, #36ffff ,#9057f9, #c93f63,#36ffff);
+  background-image: linear-gradient(90deg, var(--maincl), var(--secondarycl), var(--rosecl), var(--maincl));
   z-index: -1;
   border-radius: inherit;
   animation: BORDERSCROLL 1290ms linear infinite;
-  filter: blur(9px);
+  filter: blur(21px);
 }
 
 @keyframes BORDERSCROLL {
-  0%{
+  0% {
     background-position-x: 0vw;
   }
-  100%{
+
+  100% {
     background-position-x: 93vw;
   }
 }
 
-.skillsinfo svg{
+.skillsinfo svg {
   width: 45%;
+  transition: transform 210ms ease-in;
+}
+.skillsinfo svg:hover{
+  transform: translateY(-9%);
 }
 
-.skillsinfo>:last-child svg{
+.skillsinfo>:last-child svg {
   filter: invert(1);
 }
 
-.skillsinfo svg,.skillsinfo p{
+.skillsinfo svg,
+.skillsinfo p {
   margin-top: 0.9rem;
 }
 
 
 
 
+
+
+.aboutmeinfo {
+  margin-top: 2.7rem;
+  display: flex;
+  border: 2px solid transparent;
+  border-radius: 1.29rem;
+  background: linear-gradient(var(--bgcl), var(--bgcl)) padding-box,
+    linear-gradient(120deg, var(--secondarycl), var(--rosecl), var(--orangecl)) border-box;
+  padding: 1.9rem;
+}
+
+
+
+#greet~p {
+  margin-bottom: 2.1rem;
+}
+
+.aboutmeinfo>:first-child {
+  width: 54%;
+  text-align: justify;
+}
+
+.aboutmeinfo>:nth-child(2) {
+  margin-inline: auto;
+  width: 46%;
+  text-align: center;
+
+}
+
+.aboutmeinfo>:nth-child(2) span {
+  margin-inline: 3.6rem;
+  color: var(--maincl);
+}
+
+.aboutmeinfo>:nth-child(2) span:hover {
+  cursor: pointer;
+  text-shadow: 0px 0px 9px var(--maincl);
+}
+
+
+.aboutmeinfo>:nth-child(2) span~div {
+  width: 72%;
+  margin-inline: auto;
+  margin-top: 2.1rem;
+  text-align: left;
+}
+
+#aboutme-text {
+  border-left: 3px solid transparent;
+  border-top: 3px solid transparent;
+  padding: 0.9rem;
+  border-image: radial-gradient(circle at top left, var(--emeraldcl), transparent 27%) 9;
+}
+
+
+
+/* ALTHOUGH I WRITE THIS CODE  */
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--bgcl);
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(180deg, var(--secondarycl), var(--textcl), var(--rosecl));
+  border-radius: 1.29rem;
+  border: 1px solid var(--bgcl);
+}
+
+/* THIS WILL NOT WORK IN SAFARI AND FIREFOX */

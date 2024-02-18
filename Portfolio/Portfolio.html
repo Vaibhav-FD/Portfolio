@@ -9,9 +9,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap"
-    rel="stylesheet">
-  <link
     href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
     rel="stylesheet">
 
@@ -21,10 +18,14 @@
 </head>
 
 <body>
-
+  
+  <div class="Scroll-Progress-Bar"></div>
+  
   <header>
-
+    
+    
     <nav>
+      
 
       <div>
         <p>PORTFOLIO</p>
@@ -32,25 +33,24 @@
 
       <ul>
 
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">ABOUT ME</a></li>
+        <li><a href="#HOME-SECTION">HOME</a></li>
+        <li><a href="#ABOUTME-SECTION">ABOUT ME</a></li>
         <li><a href="#SKILLS-SECTION">SKILLS</a></li>
         <li><a href="#">PROJECTS</a></li>
         <li><a href="#">CONTACT ME</a></li>
 
       </ul>
 
+
+
+
     </nav>
 
-  </header>
 
-
-
-  <main>
 
     <section>
 
-      <div class="home">
+      <div class="home section-gap" id="HOME-SECTION">
 
         <div class="selfinfo">
 
@@ -71,12 +71,70 @@
 
     </section>
 
+  </header>
+
+
+
+  <main>
+
+
+
+
 
 
 
     <section>
 
-      <div class="skills">
+      <div class="aboutme section-gap">
+
+        <div class="aboutmeheading">
+          <h1 id="ABOUTME-SECTION">ABOUT ME</h1>
+        </div>
+
+        <div class="aboutmeinfo">
+
+          <div>
+
+            <p id="greet"></p>
+            <p>I Am Vaibhav Limbachiya And I Am Web Designer. </p>
+
+            <p>I Am Passionate And Enthusiastic About Web Sites And WebApplications And Intersted In Web Development ,
+              As Of Now I Know HTML , CSS , Java Script , TailWind And JQuery.</p>
+            <p>Currenlty I Am Learning Advance Concept Of Java Script And Later I Will Learn React Also.</p>
+            <p>Let’s Create Exceptional User Experiences And Beautiful Web Sites Together!</p>
+
+          </div>
+
+
+          <div>
+
+            <span onclick="EDU()">Education</span>
+            <span onclick="PERINFO()">Personal Info</span>
+
+            <div>
+
+              <p id="aboutme-text"></p>
+
+
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+
+    <section>
+
+      <div class="skills section-gap">
 
 
         <div class="skillsheading">
@@ -181,9 +239,11 @@
   </main>
 
   <script>
-    alert("WORK IN PROGRESS")
+    // alert("WORK IN PROGRESS")
   </script>
 
+
+  <script src="Script.js"></script>
 </body>
 
 </html>
