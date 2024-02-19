@@ -2,7 +2,7 @@ let GREETMSG = new Date();
 
 document.getElementById("greet").style.marginBottom = "2.1rem";
 
-let METEXT = document.getElementById("aboutme-text");
+let METEXT = document.getElementById("about-text");
 
 
 
@@ -40,3 +40,8 @@ function PERINFO() {
   <br><br> City : Kalol , Gujarat. `;
 
 }
+
+
+
+
+
