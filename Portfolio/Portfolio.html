@@ -6,44 +6,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">         <!-- GOOGLE FONT-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>         <!-- GOOGLE FONT-->
+
   <link
     href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-    rel="stylesheet">
+    rel="stylesheet">         <!-- GOOGLE FONT-->
 
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="Style.css">
+  <title>Portfolio</title>       
+  <link rel="stylesheet" href="Style.css">      <!-- STYLE SHEET CSS -->
 
 </head>
 
 <body>
 
+
+  <!--------- HEADER STARTS --------->
+
+
   <header>
+
+
+    <!--------- NAVBAR STARTS --------->
 
 
     <nav>
 
-
-      <div>
-        <p>PORTFOLIO</p>
-      </div>
+      <p>PORTFOLIO</p>
 
       <ul>
 
         <li><a href="#HOME-SECTION">Home</a></li>
+
         <li><a href="#ABOUT-SECTION">About</a></li>
+
         <li><a href="#SKILLS-SECTION">Skills</a></li>
+
         <li><a href="#">Projects</a></li>
+
         <li><a href="#CONTACT-SECTION">Contact</a></li>
 
       </ul>
 
-
-
-
     </nav>
 
+
+    <!--------- NAVBAR ENDS --------->
+
+
+    <!--------- HOME_SECTION STARTS --------->
 
 
     <section>
@@ -61,30 +72,37 @@
         </div>
 
         <div class="profilepic">
-          <img src="MultiMedia/Profile.jpg" alt="ProfilePic">
-        </div>
 
+          <img src="MultiMedia/Profile.jpg" alt="ProfilePic">
+
+        </div>
 
       </div>
 
     </section>
 
+
+    <!--------- HOME_SECTION ENDS --------->
+
+
   </header>
 
+
+  <!--------- HEADER ENDS --------->
+
+
+  <!--------- MAIN STARTS --------->
 
 
   <main>
 
 
-
-
-
+    <!--------- ABOUT_SECTION STARTS --------->
 
 
     <section>
 
       <div class="section-gap">
-
 
         <h1 id="ABOUT-SECTION" class="heading">ABOUT</h1>
 
@@ -93,10 +111,12 @@
           <div>
 
             <p id="greet"></p>
+
             <p>I Am Vaibhav Limbachiya And I Am Web Designer. </p>
 
             <p>I Am Passionate And Enthusiastic About Web Sites And WebApplications And Intersted In Web Development ,
               As Of Now I Know HTML , CSS , Java Script , TailWind And JQuery.</p>
+
             <p>Currenlty I Am Learning Advance Concept Of Java Script And Later I Will Learn React Also.</p>
             <p>Let’s Create Exceptional User Experiences And Beautiful Web Sites Together!</p>
 
@@ -112,35 +132,31 @@
 
               <p id="about-text"></p>
 
-
             </div>
-
 
           </div>
 
-
         </div>
 
-
       </div>
-
 
     </section>
 
 
+    <!--------- ABOUT_SECTION ENDS --------->
+
+
+    <!--------- SKILLS_SECTION STARTS --------->
+
 
     <section>
 
-      <div class="skills section-gap">
-
-
+      <div class="section-gap">
 
         <h2 id="SKILLS-SECTION" class="heading">SKILLS</h2>
 
 
-
         <div class="skillsinfo">
-
 
           <div>
 
@@ -156,6 +172,7 @@
             <p>HTML</p>
 
           </div>
+
 
 
           <div>
@@ -188,6 +205,7 @@
           </div>
 
 
+
           <div>
 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
@@ -201,6 +219,7 @@
           </div>
 
 
+
           <div>
 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
@@ -211,6 +230,7 @@
             <p>TailWind</p>
 
           </div>
+
 
 
           <div>
@@ -233,20 +253,27 @@
     </section>
 
 
+    <!--------- SKILLS_SECTION ENDS --------->
+
 
   </main>
 
+
+  <!--------- MAIN ENDS --------->
+
+
+  <!--------- FOOTER STARTS --------->
 
 
   <footer>
 
     <div class="section-gap">
 
-
       <h4 class="heading" id="CONTACT-SECTION">CONTACT</h4>
 
 
       <div class="contactlinks">
+
         <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 226 1920 1468.15">
           <path
             d="M1920 428.266v1189.54l-464.16-580.146-88.203 70.585 468.679 585.904H83.684l468.679-585.904-88.202-70.585L0 1617.805V428.265l959.944 832.441L1920 428.266ZM1919.932 226v52.627l-959.943 832.44L.045 278.628V226h1919.887Z"
@@ -256,6 +283,8 @@
         <span>E-Mail</span>
 
       </div>
+
+
 
       <div class="contactlinks">
 
@@ -270,47 +299,48 @@
       </div>
 
 
-      <p>SEND ME MESSAGE FROM HERE</p>
 
+      <p>SEND ME MESSAGE FROM HERE</p>
 
 
 
       <div class="contactform">
 
         <p>Contact Me</p>
-        
-          <form action="https://api.web3forms.com/submit" method="POST">
 
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+          <!--******* WEB3FORMS TAG FOR SENDING DATA *******-->
           <input type="hidden" name="access_key" value="3acafa96-c578-4162-9f09-29add1bf130a">
+          <!--******* WEB3FORMS TAG FOR SENDING DATA *******-->
 
-            <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
-            <input type="email" name="email" id="email" placeholder="Enter Your Email-Address" required>
-            <textarea name="message" id="message" cols="21" rows="6" placeholder="Enter Your Message" required></textarea>
 
-            <input type="submit" value="Send Message">
+          <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
 
-          </form>
+          <input type="email" name="email" id="email" placeholder="Enter Your Email-Address" required>
 
+          <textarea name="message" id="message" cols="21" rows="6" placeholder="Enter Your Message" required></textarea>
+
+          <input type="submit" value="Send Message">
+
+        </form>
 
       </div>
 
-
-
-
-
-
-
-
-
     </div>
-
-
-  
 
   </footer>
 
 
-  <script src="Script.js"></script>
+  <!--------- FOOTER STARTS --------->
+
+
+
+
+
+
+  <script src="Script.js"></script>     <!-- SCRIPT JS-->
+
 </body>
 
 </html>
