@@ -83,6 +83,17 @@ nav {
 }
 
 
+nav>p {
+
+  font-size: 1.62rem;
+  font-weight: 609;
+  color: transparent;
+  background-image: linear-gradient(108deg, var(--emeraldcl) 9%, var(--rosecl) 69%, var(--secondarycl) 108%);
+  background-clip: text;
+
+}
+
+
 nav ul {
   display: flex;
   list-style-type: none;
@@ -113,17 +124,6 @@ nav a::before {
   bottom: -36%;
   box-shadow: 0px -3px 9px var(--maincl);
   transition: width 390ms;
-
-}
-
-
-nav>p {
-
-  font-size: 1.62rem;
-  font-weight: 609;
-  color: transparent;
-  background-image: linear-gradient(108deg, var(--emeraldcl) 9%, var(--rosecl) 69%, var(--secondarycl) 108%);
-  background-clip: text;
 
 }
 
@@ -310,7 +310,7 @@ nav>p {
 
 
 .aboutinfo>:nth-child(2) span {
-  margin-inline: 3.6rem;
+  margin-left: 3.6rem;
   color: var(--maincl);
 }
 
@@ -436,16 +436,12 @@ nav>p {
   height: 39px;
   width: 39px;
   transition: transform 210ms ease-in-out;
+  margin-left: 2.7rem;
 }
 
 
 .contactlinks svg:hover {
   transform: scale(1.29);
-}
-
-
-.contactlinks>span {
-  margin-left: 2.7rem;
 }
 
 
@@ -457,9 +453,9 @@ nav>p {
 
 .contactform {
 
-  width: 39%;
+  width: 54%;
   margin-inline: auto;
-  margin-top: 6rem;
+  margin-top: 3.9rem;
   padding: 0.27rem;
   border-radius: 1.29rem;
   overflow: hidden;

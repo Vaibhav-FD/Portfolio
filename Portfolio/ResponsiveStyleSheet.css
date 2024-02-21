@@ -1,0 +1,306 @@
+@media (max-width: 1200px) {
+
+  body {
+    font-size: 1.2rem;
+  }
+
+  nav>p {
+    font-size: 1.45rem;
+  }
+
+  nav a {
+    margin-left: 4.2rem;
+    font-size: 1.29rem;
+  }
+
+  .profilepic {
+    width: 36%;
+  }
+
+  .selfinfo>:first-child {
+    font-size: 1.8rem;
+    margin-block: 2.1rem;
+  }
+
+  .selfinfo>:nth-child(2),
+  .selfinfo>:nth-child(3) {
+    font-size: 2.19rem;
+  }
+
+  .selfinfo a {
+    width: 48%;
+  }
+
+  .section-gap {
+    margin-block: 6.3rem;
+  }
+
+  .skillsinfo svg {
+    width: 99px;
+    height: 99px;
+  }
+
+  .contactform {
+    width: 54%;
+  }
+
+  .contactform p {
+    font-size: 1.8rem;
+  }
+
+  .contactform>form * {
+    font-size: 1.09rem;
+  }
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+
+  body {
+    font-size: 1.09rem;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .section-gap {
+    margin-block: 3.9rem;
+  }
+
+  .section-gap,
+  nav {
+    padding-inline: 2.91rem;
+  }
+
+  .profilepic {
+    width: 45%;
+  }
+
+  .selfinfo>:nth-child(2),
+  .selfinfo>:nth-child(3) {
+    font-size: 1.9rem;
+  }
+
+  .selfinfo a {
+    width: 69%;
+  }
+
+  .heading {
+    font-size: 1.44rem;
+  }
+
+  .aboutinfo {
+    flex-direction: column;
+  }
+
+  .aboutinfo>:first-child,
+  .aboutinfo>:nth-child(2) {
+    width: 100%;
+  }
+
+  .aboutinfo>:first-child {
+    margin-bottom: 2.1rem;
+  }
+
+
+  .aboutinfo>:nth-child(2) span~div {
+    text-align: center;
+  }
+
+  #about-text {
+    border: none;
+  }
+
+  .skillsinfo svg {
+    width: 81px;
+    height: 81px;
+  }
+
+  .skillsinfo svg,
+  .skillsinfo p {
+    margin-block: 0.21rem;
+  }
+
+  .contactform p {
+    font-size: 1.62rem;
+  }
+
+  .contactform>form * {
+    font-size: 1.02rem;
+  }
+
+  .contactlinks svg {
+    height: 32px;
+    width: 32px;
+    margin-left: 1.8rem;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+  body {
+    font-size: 1.09rem;
+  }
+
+  .home {
+    flex-direction: column;
+  }
+
+  .heading {
+    font-size: 1.29rem;
+  }
+
+  .section-gap,
+  nav {
+    padding-inline: 2.1rem;
+  }
+
+  nav {
+    padding-block: 1.09rem;
+  }
+
+  nav>p {
+    font-size: 1.29rem;
+  }
+
+  .selfinfo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .selfinfo a {
+    width: 54%;
+    margin-inline: auto;
+    margin-bottom: 3.9rem;
+  }
+
+  .profilepic {
+    width: 51%;
+    border-radius: 1.29rem;
+    margin-inline: auto;
+    box-shadow: 0px 0px 9px 3px var(--emeraldcl);
+  }
+
+  .skillsinfo {
+    flex-wrap: wrap;
+  }
+
+  .skillsinfo {
+    padding: 1.5rem;
+  }
+
+  .contactform {
+    width: 75%;
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+
+  body {
+    font-size: 0.99rem;
+  }
+
+  .heading {
+    font-size: 1.09rem;
+  }
+
+  .aboutinfo>:nth-child(2) span {
+    margin-left: 1.5rem;
+  }
+
+  .section-gap,
+  nav {
+    padding-inline: 1.5rem;
+  }
+
+  .selfinfo>:nth-child(2),
+  .selfinfo>:nth-child(3) {
+    font-size: 1.71rem;
+  }
+
+  .selfinfo>:first-child {
+    font-size: 1.53rem;
+  }
+
+  .contactform>form * {
+    margin-top: 1.02rem;
+  }
+
+  .contactform input,
+  .contactform textarea {
+    padding: 0.36rem;
+
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+
+
+  body {
+    font-size: 0.9rem;
+  }
+
+  .profilepic {
+    width: 63%;
+  }
+
+  nav {
+    padding-block: 0.81rem;
+  }
+
+  nav>p {
+    font-size: 0.9rem;
+  }
+
+  .heading {
+    font-size: 1.02rem;
+  }
+
+  .contactform p {
+    font-size: 1.09rem;
+  }
+
+  .contactform>form * {
+    font-size: 0.81rem;
+  }
+
+
+
+}
