@@ -1,5 +1,6 @@
 @media (max-width: 1200px) {
 
+
   body {
     font-size: 1.2rem;
   }
@@ -36,8 +37,17 @@
   }
 
   .skillsinfo svg {
-    width: 99px;
-    height: 99px;
+    width: 129px;
+    height: 129px;
+  }
+
+  .meters {
+    width: 138px;
+    height: 138px;
+  }
+
+  .meters>b{
+  font-size: 1.62rem;
   }
 
   .contactform {
@@ -63,12 +73,46 @@
 
 @media (max-width: 992px) {
 
+
   body {
     font-size: 1.09rem;
   }
 
-  nav ul {
+  #navlinks {
     display: none;
+  }
+
+  nav a{
+    margin: 0;
+  }
+
+  nav input:checked~#navlinks{
+
+    display: block;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    right: 0;
+    text-align: center;
+    background-color: #060912e4;
+
+  }
+
+  #navlinks li{
+    margin-block: 7.5%;
+  }
+
+  .navicon {
+      display: block;
+  }
+  
+  nav input:checked+b{
+    display: none;
+  }
+  
+  nav input:checked+b+b{
+    display: block;
   }
 
   .section-gap {
@@ -110,7 +154,6 @@
     margin-bottom: 2.1rem;
   }
 
-
   .aboutinfo>:nth-child(2) span~div {
     text-align: center;
   }
@@ -120,9 +163,10 @@
   }
 
   .skillsinfo svg {
-    width: 81px;
-    height: 81px;
+    width: 109px;
+    height: 109px;
   }
+
 
   .skillsinfo svg,
   .skillsinfo p {
@@ -155,6 +199,7 @@
 
 @media (max-width: 768px) {
 
+
   body {
     font-size: 1.09rem;
   }
@@ -174,6 +219,14 @@
 
   nav {
     padding-block: 1.09rem;
+  }
+
+  #navlinks li a {
+    font-size: 1.29rem;
+  }
+
+  #navlinks li{
+    margin-block: 9.9%;
   }
 
   nav>p {
@@ -206,10 +259,13 @@
     padding: 1.5rem;
   }
 
+  .meters{
+    margin-bottom: 1.09rem;
+  }
+
   .contactform {
     width: 75%;
   }
-
 
 
 }
@@ -223,11 +279,20 @@
 
 @media (max-width: 576px) {
 
+
   body {
     font-size: 0.99rem;
   }
 
   .heading {
+    font-size: 1.09rem;
+  }
+
+  #navlinks li{
+    margin-block: 12.9%;
+  }
+
+  #navlinks li a {
     font-size: 1.09rem;
   }
 
@@ -256,9 +321,7 @@
   .contactform input,
   .contactform textarea {
     padding: 0.36rem;
-
   }
-
 
 
 }
@@ -285,6 +348,14 @@
     padding-block: 0.81rem;
   }
 
+  #navlinks li{
+    margin-block: 15.3%;
+  }
+
+  .navicon,.navicon2 {
+    font-size: 1.09rem;
+  }
+
   nav>p {
     font-size: 0.9rem;
   }
@@ -300,7 +371,6 @@
   .contactform>form * {
     font-size: 0.81rem;
   }
-
 
 
 }
