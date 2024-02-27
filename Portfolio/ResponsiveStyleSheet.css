@@ -141,27 +141,6 @@
     font-size: 1.44rem;
   }
 
-  .aboutinfo {
-    flex-direction: column;
-  }
-
-  .aboutinfo>:first-child,
-  .aboutinfo>:nth-child(2) {
-    width: 100%;
-  }
-
-  .aboutinfo>:first-child {
-    margin-bottom: 2.1rem;
-  }
-
-  .aboutinfo>:nth-child(2) span~div {
-    text-align: center;
-  }
-
-  #about-text {
-    border: none;
-  }
-
   .skillsinfo svg {
     width: 109px;
     height: 109px;
@@ -294,10 +273,6 @@
 
   #navlinks li a {
     font-size: 1.09rem;
-  }
-
-  .aboutinfo>:nth-child(2) span {
-    margin-left: 1.5rem;
   }
 
   .section-gap,
